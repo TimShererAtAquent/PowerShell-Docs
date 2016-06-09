@@ -16,15 +16,17 @@ Starting with version 5.1, PowerShell is available in different editions which d
 - [Filter Get-Module results by CompatiblePSEditions]()
 - [Prevent script execution unless run on a comaptible edition of PowerShell]()
 
-## Module Analysis Cache ##
+## Example: Module Analysis Cache ##
 Starting with version 5.1, PowerShell provides the following control
 over the file that is used to cache data about a module like the commands it exports.
+
+`TODO` need to either provide a better desription of analysis cache and the 'control' options beyond turning it off/on unless that is the limits to the changes introduced.
 
 By default, this cache is stored in the file `${env:LOCALAPPDATA}\Microsoft\Windows\PowerShell\ModuleAnalysisCache`.
 The cache is typically read at startup while searching for a command
 and is written on a background thread sometime after a module is imported.
 
 **Learn more about controlling module analysis cache**
-- (Change the default location of the cache)[]
-- (Enable or disable file cache)[]
-- (Enable or disable cache cleanup)[]
+- [Change the default location of the cache]()
+- [Enable or disable file cache]()
+- [Enable or disable cache cleanup]()
